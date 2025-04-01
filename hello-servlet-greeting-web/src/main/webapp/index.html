@@ -1,0 +1,28 @@
+<html>
+<body>
+<h2>Hello Servlet and welcome to greetings-app!</h2>
+
+<h1>Greetings Management System</h1>
+<form action="/servlet-greeting-web/hello" method="GET">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+    <label>Occasion:</label>
+    <input type="radio" id="birthday" name="occasion" value="Birthday" required>
+    <label for="birthday">Birthday</label>
+    <input type="radio" id="anniversary" name="occasion" value="Anniversary" required>
+    <label for="anniversary">Anniversary</label>
+    <input type="radio" id="festival" name="occasion" value="Festival" required>
+    <label for="festival">Festival</label><br><br>
+
+    <div style="display: flex; align-items: center;">
+        <label for="message" style="margin-right: 10px;">Message:</label>
+        <textarea id="message" name="message" rows="3" cols="40" placeholder="Enter your greeting message.."></textarea>
+    </div>
+    <br><br>
+
+    <button type="submit">Greet</button>
+
+</form>
+</body>
+</html>

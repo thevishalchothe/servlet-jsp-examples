@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.vbc.example</groupId>
+    <artifactId>hello-servlet-greeting-web</artifactId>
+    <packaging>war</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>hello-servlet Maven Webapp</name>
+    <url>http://maven.apache.org</url>
+    <dependencies>
+        <!-- Jakarta Servlet API (compatible with Java 21) -->
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <version>6.0.0</version> <!-- Jakarta EE 10 version -->
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+    <build>
+        <finalName>servlet-greeting-web</finalName>
+    </build>
+</project>
