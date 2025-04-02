@@ -27,4 +27,15 @@
     <url-pattern>/ViewBookController</url-pattern>
   </servlet-mapping>
 
+  <!-- Add User Controller -->
+  <servlet>
+    <servlet-name>AddUserController</servlet-name>
+    <servlet-class>com.vbc.servlet.management.controller.AddUserController</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AddUserController</servlet-name>
+    <url-pattern>/AddUserController</url-pattern>
+  </servlet-mapping>
+
 </web-app>
