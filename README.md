@@ -14,4 +14,18 @@
 
 - **servlet-lifecycle-web**
   - Showcases the `lifecycle of a Servlet` (`init()`, `service()`, `destroy()`).
-  - Useful for understanding how Servlets are managed by the Servlet container.
+  - For understanding how Servlets are managed by the Servlet container.
+
+- **book-management-servlet-app**
+  - Tech Stack: Servlet, JSP, HTML, JDBC, MySQL, Maven, Tomcat
+  - Models: Book `(fields: id, title, author)`
+  - Steps:
+    1. **Setup:** Controller, Service, Model, DBConnection, Webapp
+    2. **Models:** Implement the `Book` class with required fields, getters & setters
+    3. **Dependencies:** Add `jakarta-servlet`, `mysql` in `pom.xml`
+    4. **Controllers:** Implement service logic
+    5. **Mappings:** Configure routes in `web.xml`
+    6. **Views:** Create forms (add-book.html) and display pages (view-books.jsp)  
+    7. **Deploy:** Build `.war`, deploy on Tomcat - Done! ✅
+
+**Outcome:** A dynamic **Book Management System** with book handling via Servlets! 🎯📖
