@@ -18,14 +18,14 @@
 
 - **book-management-servlet-app**
   - Tech Stack: Servlet, JSP, HTML, JDBC, MySQL, Maven, Tomcat
-  - Models: Book `(fields: id, title, author)`
+  - Models: Book `(fields: id, title, author)`, User `(Fields: uid, uname, email)`
   - Steps:
     1. **Setup:** Controller, Service, Model, DBConnection, Webapp
-    2. **Models:** Implement the `Book` class with required fields, getters & setters
+    2. **Models:** Implement the `Book` & `User` classes with required fields, getters & setters
     3. **Dependencies:** Add `jakarta-servlet`, `mysql` in `pom.xml`
     4. **Controllers:** Implement service logic
     5. **Mappings:** Configure routes in `web.xml`
-    6. **Views:** Create forms (add-book.html) and display pages (view-books.jsp)  
+    6. **Views:** Create forms like (add-book.html), display pages (view-books.jsp), and other related UI components.
     7. **Deploy:** Build `.war`, deploy on Tomcat - Done! ✅
 
-**Outcome:** A dynamic **Book Management System** with book handling via Servlets! 🎯📖
+**Outcome:** A dynamic **Book Management System** with book & user handling via Servlets! 🎯📖
