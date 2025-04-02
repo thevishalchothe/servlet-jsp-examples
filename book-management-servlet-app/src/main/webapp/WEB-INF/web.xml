@@ -38,4 +38,14 @@
     <url-pattern>/AddUserController</url-pattern>
   </servlet-mapping>
 
+  <!-- View User Controller -->
+  <servlet>
+    <servlet-name>ViewUserController</servlet-name>
+    <servlet-class>com.vbc.servlet.management.controller.ViewUserController</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ViewUserController</servlet-name>
+    <url-pattern>/ViewUserController</url-pattern>
+  </servlet-mapping>
 </web-app>
