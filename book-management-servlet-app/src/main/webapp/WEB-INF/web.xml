@@ -1,7 +1,30 @@
 <!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+  <!-- Add Book Controller -->
+  <servlet>
+    <servlet-name>AddBookController</servlet-name>
+    <servlet-class>com.vbc.servlet.management.controller.AddBookController</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AddBookController</servlet-name>
+    <url-pattern>/AddBookController</url-pattern>
+  </servlet-mapping>
+
+  <!-- View Book Controller -->
+  <servlet>
+    <servlet-name>ViewBookController</servlet-name>
+    <servlet-class>com.vbc.servlet.management.controller.ViewBookController</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ViewBookController</servlet-name>
+    <url-pattern>/ViewBookController</url-pattern>
+  </servlet-mapping>
+
 </web-app>
