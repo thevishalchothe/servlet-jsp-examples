@@ -23,7 +23,7 @@
     1. **Setup:** Controller, Service, Dao, Model, DBConnection, Webapp
     2. **Models:** Implement the `Book` & `User` classes with required fields, getters & setters
     3. **Dependencies:** Add `jakarta-servlet`, `mysql` in `pom.xml`
-    4. **Controllers:** Implement service logic
+    4. **Controllers:** Implement CRUD service logic 
     5. **Mappings:** Configure routes in `web.xml`
     6. **Views:** Create forms like (add-book.html), display pages (view-books.jsp), and other related UI components.
     7. **Deploy:** Build `.war`, deploy on Tomcat - Done! ✅
