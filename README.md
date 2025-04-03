@@ -20,7 +20,7 @@
   - Tech Stack: Servlet, JSP, HTML, JDBC, MySQL, Maven, Tomcat
   - Models: Book `(fields: id, title, author)`, User `(Fields: uid, uname, email)`
   - Steps:
-    1. **Setup:** Controller, Service, Model, DBConnection, Webapp
+    1. **Setup:** Controller, Service, Dao, Model, DBConnection, Webapp
     2. **Models:** Implement the `Book` & `User` classes with required fields, getters & setters
     3. **Dependencies:** Add `jakarta-servlet`, `mysql` in `pom.xml`
     4. **Controllers:** Implement service logic
