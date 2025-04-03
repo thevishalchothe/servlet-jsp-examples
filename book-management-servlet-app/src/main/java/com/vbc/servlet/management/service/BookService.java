@@ -6,14 +6,17 @@ import com.vbc.servlet.management.dao.BookDAO;
 import java.util.List;
 
 public class BookService {
-    private static final BookDAO BOOK_DAO = new BookDAO();
+    private static final BookDAO bookDAO = new BookDAO();
 
     public boolean addBook(Book book) {
-        return BOOK_DAO.addBook(book);
+        return bookDAO.addBook(book);
     }
 
     public List<Book> getAllBooks() {
-        return BOOK_DAO.getAllBooks();
+        return bookDAO.getAllBooks();
     }
 
+    public boolean deleteBook(int bookId) {
+        return bookDAO.deleteBook(bookId);
+    }
 }

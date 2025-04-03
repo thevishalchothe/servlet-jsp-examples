@@ -53,4 +53,20 @@ public class BookDAO {
         return books;
     }
 
+    public boolean deleteBook(int bookId) {
+        boolean result = false;
+        String sql = "DELETE FROM books WHERE bid = ?";
+
+        try (Connection connection = DBConnection.getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+
+            preparedStatement.setInt(1, bookId);
+            int rowsAffected = preparedStatement.executeUpdate();
+            result = rowsAffected > 0;
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
 }

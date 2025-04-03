@@ -23,6 +23,17 @@
   </servlet>
 
   <servlet-mapping>
+    <servlet-name>DeleteBookController</servlet-name>
+    <url-pattern>/DeleteBookController</url-pattern>
+  </servlet-mapping>
+
+  <!-- View Book Controller -->
+  <servlet>
+    <servlet-name>DeleteBookController</servlet-name>
+    <servlet-class>com.vbc.servlet.management.controller.DeleteBookController</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
     <servlet-name>ViewBookController</servlet-name>
     <url-pattern>/ViewBookController</url-pattern>
   </servlet-mapping>
@@ -48,4 +59,5 @@
     <servlet-name>ViewUserController</servlet-name>
     <url-pattern>/ViewUserController</url-pattern>
   </servlet-mapping>
+
 </web-app>
