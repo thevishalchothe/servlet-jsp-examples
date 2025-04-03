@@ -26,7 +26,7 @@ public class AddUserController extends HttpServlet {
         boolean isAdded = userService.addUser(user);
 
         if (isAdded) {
-            response.sendRedirect("add-user-success.html");
+            response.sendRedirect("views/add-user-success.html");
         } else {
             PrintWriter writer = response.getWriter();
             writer.println("<html><body><h2>Failed to add user. Try again.</h2>");

@@ -26,7 +26,7 @@ public class AddBookController extends HttpServlet {
         boolean isAdded = bookService.addBook(book);
 
         if (isAdded) {
-            response.sendRedirect("add-book-success.html");
+            response.sendRedirect("views/add-book-success.html");
         } else {
             PrintWriter writer = response.getWriter();
             writer.println("<html><body><h2>Failed to add book. Try again.</h2>");

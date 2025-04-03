@@ -25,7 +25,7 @@ public class ViewBookController extends HttpServlet {
             request.setAttribute("books", books);
         }
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("view-books.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("views/view-books.jsp");
         dispatcher.forward(request, response);
     }
 

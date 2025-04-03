@@ -25,7 +25,7 @@ public class ViewUserController extends HttpServlet {
             request.setAttribute("users", users);
         }
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("view-users.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("views/view-users.jsp");
         dispatcher.forward(request, response);
     }
 
