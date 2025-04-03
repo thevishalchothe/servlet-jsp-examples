@@ -22,16 +22,38 @@
     <servlet-class>com.vbc.servlet.management.controller.ViewBookController</servlet-class>
   </servlet>
 
+  <!-- Delete Book Controller -->
+  <servlet>
+    <servlet-name>DeleteBookController</servlet-name>
+    <servlet-class>com.vbc.servlet.management.controller.DeleteBookController</servlet-class>
+  </servlet>
+
   <servlet-mapping>
     <servlet-name>DeleteBookController</servlet-name>
     <url-pattern>/DeleteBookController</url-pattern>
   </servlet-mapping>
 
-  <!-- View Book Controller -->
+
+  <!-- Update Book Controller -->
   <servlet>
-    <servlet-name>DeleteBookController</servlet-name>
-    <servlet-class>com.vbc.servlet.management.controller.DeleteBookController</servlet-class>
+    <servlet-name>UpdateBookController</servlet-name>
+    <servlet-class>com.vbc.servlet.management.controller.UpdateBookController</servlet-class>
   </servlet>
+
+  <servlet-mapping>
+    <servlet-name>UpdateBookController</servlet-name>
+    <url-pattern>/UpdateBookController</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UpdateBook</servlet-name>
+    <jsp-file>/views/update-book.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateBook</servlet-name>
+    <url-pattern>/views/update-book.jsp</url-pattern>
+  </servlet-mapping>
+
 
   <servlet-mapping>
     <servlet-name>ViewBookController</servlet-name>

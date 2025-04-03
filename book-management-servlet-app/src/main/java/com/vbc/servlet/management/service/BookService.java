@@ -1,7 +1,7 @@
 package com.vbc.servlet.management.service;
 
-import com.vbc.servlet.management.model.Book;
 import com.vbc.servlet.management.dao.BookDAO;
+import com.vbc.servlet.management.model.Book;
 
 import java.util.List;
 
@@ -18,5 +18,18 @@ public class BookService {
 
     public boolean deleteBook(int bookId) {
         return bookDAO.deleteBook(bookId);
+    }
+
+    public Book getBookById(int bookId) {
+        return bookDAO.getBookById(bookId);
+    }
+
+    public boolean updateBook(Book book) {
+        try {
+            return bookDAO.updateBook(book);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 }
