@@ -1,55 +1,30 @@
 package com.vbc.servlet.management.service;
 
-import com.vbc.servlet.management.db.DBConnection;
+import com.vbc.servlet.management.dao.UserDAO;
 import com.vbc.servlet.management.model.User;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class UserService {
+    private static final UserDAO userDAO = new UserDAO();
 
     public boolean addUser(User user) {
-        boolean result = false;
-        String sql = "INSERT INTO users (uname, email) VALUES (?, ?)";
-
-        try (Connection connection = DBConnection.getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
-
-            preparedStatement.setString(1, user.getUname());
-            preparedStatement.setString(2, user.getEmail());
-
-            int rowsAffected = preparedStatement.executeUpdate();
-            result = rowsAffected > 0;
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return result;
+        return userDAO.addUser(user);
     }
 
     public List<User> getAllUsers() {
-        List<User> users = new ArrayList<>();
-        String sql = "SELECT uid, uname, email FROM users";
+        return userDAO.getAllUsers();
+    }
 
-        try (Connection connection = DBConnection.getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement(sql);
-             ResultSet resultSet = preparedStatement.executeQuery()) {
+    public boolean deleteUser(int userId) {
+        return userDAO.deleteUser(userId);
+    }
 
-            while (resultSet.next()) {
-                User user = new User();
-                user.setUid(resultSet.getInt("uid"));
-                user.setUname(resultSet.getString("uname"));
-                user.setEmail(resultSet.getString("email"));
-                users.add(user);
-            }
+    public User getUserById(int userId) {
+        return userDAO.getUserById(userId);
+    }
 
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return users;
+    public boolean updateUser(User user) {
+        return userDAO.updateUser(user);
     }
 }
