@@ -1,6 +1,6 @@
 # servlets-tutorial-series 🚀
 
-*servlets-tutorial-series showcases a variety of projects focused on demonstrating core concepts and operations using Java Servlets.* 📘🚀
+servlets-tutorial-series showcases a variety of projects focused on demonstrating core concepts and operations using Java Servlets. 📘🚀
 
 ## Project Architecture 📂
 
@@ -18,14 +18,14 @@
 
 - **book-management-servlet-app**
   - Tech Stack: Servlet, JSP, HTML, JDBC, MySQL, Maven, Tomcat
-  - Models: Book `(fields: id, title, author)`, User `(Fields: uid, uname, email)`
-  - Steps:
-    1. **Setup:** Controller, Service, Dao, Model, DBConnection, Webapp
-    2. **Models:** Implement the `Book` & `User` classes with required fields, getters & setters
-    3. **Dependencies:** Add `jakarta-servlet`, `mysql` in `pom.xml`
-    4. **Controllers:** Implement CRUD service logic 
-    5. **Mappings:** Configure routes in `web.xml`
-    6. **Views:** Create forms like (add-book.html), display pages (view-books.jsp), and other related UI components.
-    7. **Deploy:** Build `.war`, deploy on Tomcat - Done! ✅
+  - Models:  Book `(fields: id, title, author)`, User `(Fields: uid, uname, email)`, Admin `(fields:id, adminName, username,password)`
+  - Features:
+    1. **Setup:** Create Controller, Service, DAO, Model, DBConnection utility, and `webapp` folder structure.
+    2. **Models:** Implement POJOs for `Book`, `User`, and `Admin` with appropriate fields, constructors, getters, and setters.
+    3. **Dependencies:** Add required dependencies like `jakarta.servlet`, `mysql-connector-java` in `pom.xml`.
+    4. **Controllers:** Implement full CRUD operations for **Books** and **Users**, and add logic for **Admin Register/Login**.
+    5. **Routing:** Configure servlet routes and servlet mappings in `web.xml`.
+    6. **Views:** Create interactive forms (`add-book.html`, `register-admin.html`, etc.), and display pages using JSP (`view-books.jsp`, etc.).
+    7. **Deployment:** Build the `.war` file and deploy on Apache Tomcat server - Done! ✅
 
-**Outcome:** A dynamic **Book Management System** with book & user handling via Servlets! 🎯📖
+**Outcome:** A dynamic **Book Management System** with book, user and admin handling via Servlets! 🎯📖
