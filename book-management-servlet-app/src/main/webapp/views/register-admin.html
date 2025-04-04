@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Admin!</title>
+</head>
+<body>
+<h2>Welcome Admin! (Librarian) Book Management System!</h2>
+<h2>Register as Admin (Librarian)</h2>
+
+<form action="/book-management-servlet-app/RegisterAdminController" method="post">
+    <label>Admin Name:</label>
+    <input type="text" name="adminName" required><br><br>
+
+    <label>Username:</label>
+    <input type="text" name="username" required><br><br>
+
+    <label>Password:</label>
+    <input type="password" name="password" required><br><br>
+
+    <input type="submit" value="Register">
+</form>
+
+<br>
+<div>
+    <button onclick="location.href='index.html'">Back to Home</button>
+</div>
+</body>
+</html>

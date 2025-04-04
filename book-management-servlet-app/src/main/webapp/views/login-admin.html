@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Login here!</title>
+</head>
+<body>
+<h1>Login as Admin! (Librarian)</h1>
+
+<form action="/book-management-servlet-app/LoginAdminController" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <input type="submit" value="Login">
+</form>
+
+<br>
+<div>
+    <button onclick="location.href='/book-management-servlet-app/index.html'">Back to Home</button>
+</div>
+
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+ if (urlParams.get('success') === 'true') {
+     alert("Registration successful! Please login now.");
+     history.replaceState(null, "", window.location.pathname);
+ }
+ if (urlParams.get('error') === 'true') {
+     alert("Invalid username or password. Please try again.");
+     history.replaceState(null, "", window.location.pathname);
+ }
+</script>
+</body>
+</html>

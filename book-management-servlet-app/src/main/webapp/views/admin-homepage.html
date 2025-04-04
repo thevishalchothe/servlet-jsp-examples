@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Homepage!</title>
+</head>
+<body>
+
+<h1>Welcome to Admin (Librarian) Homepage!</h1>
+<hr>
+
+<h2>Operations</h2>
+<p>
+    <strong>Book:</strong>
+    <a href="/book-management-servlet-app/views/add-book.html">Add Book</a> |
+    <a href="/book-management-servlet-app/ViewBookController">View Books</a>
+    &nbsp; &nbsp;
+    <strong>User:</strong>
+    <a href="/book-management-servlet-app/views/add-user.html">Add User</a> |
+    <a href="/book-management-servlet-app/ViewUserController">View Users</a>
+    <br><br>
+</p>
+
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('login') === 'success') {
+        alert("Login successful! Welcome Admin.");
+        history.replaceState(null, "", window.location.pathname);
+    }
+</script>
+
+<br>
+<div>
+    <button onclick="location.href='/book-management-servlet-app/index.html'">Back to Home</button>
+</div>
+</body>
+</html>
