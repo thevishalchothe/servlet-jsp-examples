@@ -1,4 +1,4 @@
-package com.vbc.servlet.management.dao;
+package com.vbc.servlet.management.repository;
 
 import com.vbc.servlet.management.db.DBConnection;
 import com.vbc.servlet.management.model.Admin;
@@ -8,7 +8,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class AdminDAO {
+public class AdminRepository {
 
     public boolean registerAdmin(Admin admin) {
         String sql = "INSERT INTO admin (admin_name, username, password) VALUES (?, ?, ?)";

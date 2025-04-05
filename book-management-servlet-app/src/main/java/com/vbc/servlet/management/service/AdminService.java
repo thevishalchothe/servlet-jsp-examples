@@ -1,16 +1,16 @@
 package com.vbc.servlet.management.service;
 
-import com.vbc.servlet.management.dao.AdminDAO;
 import com.vbc.servlet.management.model.Admin;
+import com.vbc.servlet.management.repository.AdminRepository;
 
 public class AdminService {
-    private static final AdminDAO adminDao = new AdminDAO();
+    private static final AdminRepository adminRepository = new AdminRepository();
 
     public boolean registerAdmin(Admin admin) {
-        return adminDao.registerAdmin(admin);
+        return adminRepository.registerAdmin(admin);
     }
 
     public Admin loginAdmin(String username, String password) {
-        return adminDao.loginadmin(username,password);
+        return adminRepository.loginadmin(username,password);
     }
 }

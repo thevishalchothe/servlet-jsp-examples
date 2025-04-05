@@ -1,30 +1,30 @@
 package com.vbc.servlet.management.service;
 
-import com.vbc.servlet.management.dao.UserDAO;
 import com.vbc.servlet.management.model.User;
+import com.vbc.servlet.management.repository.UserRepository;
 
 import java.util.List;
 
 public class UserService {
-    private static final UserDAO userDAO = new UserDAO();
+    private static final UserRepository userRepository = new UserRepository();
 
     public boolean addUser(User user) {
-        return userDAO.addUser(user);
+        return userRepository.addUser(user);
     }
 
     public List<User> getAllUsers() {
-        return userDAO.getAllUsers();
+        return userRepository.getAllUsers();
     }
 
     public boolean deleteUser(int userId) {
-        return userDAO.deleteUser(userId);
+        return userRepository.deleteUser(userId);
     }
 
     public User getUserById(int userId) {
-        return userDAO.getUserById(userId);
+        return userRepository.getUserById(userId);
     }
 
     public boolean updateUser(User user) {
-        return userDAO.updateUser(user);
+        return userRepository.updateUser(user);
     }
 }

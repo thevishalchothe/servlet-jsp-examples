@@ -1,32 +1,32 @@
 package com.vbc.servlet.management.service;
 
-import com.vbc.servlet.management.dao.BookDAO;
 import com.vbc.servlet.management.model.Book;
+import com.vbc.servlet.management.repository.BookRepository;
 
 import java.util.List;
 
 public class BookService {
-    private static final BookDAO bookDAO = new BookDAO();
+    private static final BookRepository bookRepository = new BookRepository();
 
     public boolean addBook(Book book) {
-        return bookDAO.addBook(book);
+        return bookRepository.addBook(book);
     }
 
     public List<Book> getAllBooks() {
-        return bookDAO.getAllBooks();
+        return bookRepository.getAllBooks();
     }
 
     public boolean deleteBook(int bookId) {
-        return bookDAO.deleteBook(bookId);
+        return bookRepository.deleteBook(bookId);
     }
 
     public Book getBookById(int bookId) {
-        return bookDAO.getBookById(bookId);
+        return bookRepository.getBookById(bookId);
     }
 
     public boolean updateBook(Book book) {
         try {
-            return bookDAO.updateBook(book);
+            return bookRepository.updateBook(book);
         } catch (Exception e) {
             e.printStackTrace();
             return false;
