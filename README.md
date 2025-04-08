@@ -1,6 +1,6 @@
-# servlets-tutorial-series 🚀
+# servlets-tutorial-examples 🚀
 
-servlets-tutorial-series showcases a variety of projects focused on demonstrating core concepts and operations using Java Servlets. 📘🚀
+The `servlets-tutorial-examples` showcases a variety of hands-on projects focused on demonstrating the core concepts and operations using Java Servlets. 📘🚀
 
 ## Project Architecture 📂
 
@@ -29,3 +29,37 @@ servlets-tutorial-series showcases a variety of projects focused on demonstratin
     7. **Deployment:** Build the `.war` file and deploy on Apache Tomcat server - Done! ✅
 
 **Outcome:** A dynamic **Book Management System** with book, user and admin handling via Servlets! 🎯📖
+
+---
+
+### **Technologies Used** 💻🔧
+
+#### **Backend & Web Technologies**
+- **Java Servlets** ☕️: Core for handling HTTP requests and responses.
+- **JDBC** 📡: To connect and interact with the MySQL database.
+- **MySQL** 🗄️: Stores data for books, users, and admins.
+- **JSP** 🧩: Java Server Pages for rendering dynamic content.
+- **HTML & JavaScript** 🌐: For structuring frontend forms/pages and rendering pop-up messages.
+- **Apache Tomcat v10** 🐱‍💻: Servlet container to deploy and run applications.
+- **Maven** 🧰: For dependency management and project building.
+
+---
+
+### **Prerequisites** 🛠️
+
+Before you begin, make sure the following are installed:
+
+- **Java JDK 21 or later**: Download from [Oracle](https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html) or [OpenJDK](https://jdk.java.net/21/).
+- **Apache Tomcat v10**: Download from [Tomcat’s website](https://tomcat.apache.org/download-10.cgi).
+- **IntelliJ IDEA for Enterprise Java**: Download from [IntelliJ IDEA Download](https://www.jetbrains.com/idea/download/)
+- **MySQL Server**: Install from [MySQL Community](https://dev.mysql.com/downloads/installer/).
+- **Maven**: [Install Maven](https://maven.apache.org/install.html) if not bundled with your IDE.
+
+---
+
+### **Installation & Setup** ⚙️
+
+#### **Clone the Repository**
+```bash
+git clone https://github.com/thevishalchothe/servlets-tutorial-examples.git
+cd servlets-tutorial-examples
