@@ -12,7 +12,7 @@
 Book book = (Book) request.getAttribute("book");
 if (book != null) {
 %>
-<form action="<%= request.getContextPath() %>/UpdateBookController" method="post">
+<form action="<%= request.getContextPath() %>/BookController?action=updateBook" method="post">
   <input type="hidden" name="bid" value="<%= book.getBid() %>">
 
   <label for="title">Title:</label>
@@ -32,6 +32,6 @@ if (book != null) {
 %>
 
 <br>
-<button onclick="location.href='ViewBookController'">Back to Book List</button>
+<button onclick="location.href='<%= request.getContextPath() %>/BookController?action=viewBooks'">Back to Book List</button>
 </body>
 </html>

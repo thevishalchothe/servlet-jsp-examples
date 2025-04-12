@@ -28,59 +28,17 @@
   </servlet-mapping>
 
 
-  <!-- Add Book Controller -->
+  <!-- Book Controller -->
   <servlet>
-    <servlet-name>AddBookController</servlet-name>
-    <servlet-class>com.vbc.servlet.management.controller.AddBookController</servlet-class>
+    <servlet-name>BookController</servlet-name>
+    <servlet-class>com.vbc.servlet.management.controller.BookController</servlet-class>
   </servlet>
 
   <servlet-mapping>
-    <servlet-name>AddBookController</servlet-name>
-    <url-pattern>/AddBookController</url-pattern>
+    <servlet-name>BookController</servlet-name>
+    <url-pattern>/BookController</url-pattern>
   </servlet-mapping>
 
-  <!-- View Book Controller -->
-  <servlet>
-    <servlet-name>ViewBookController</servlet-name>
-    <servlet-class>com.vbc.servlet.management.controller.ViewBookController</servlet-class>
-  </servlet>
-
-  <servlet-mapping>
-    <servlet-name>ViewBookController</servlet-name>
-    <url-pattern>/ViewBookController</url-pattern>
-  </servlet-mapping>
-
-  <!-- Delete Book Controller -->
-  <servlet>
-    <servlet-name>DeleteBookController</servlet-name>
-    <servlet-class>com.vbc.servlet.management.controller.DeleteBookController</servlet-class>
-  </servlet>
-
-  <servlet-mapping>
-    <servlet-name>DeleteBookController</servlet-name>
-    <url-pattern>/DeleteBookController</url-pattern>
-  </servlet-mapping>
-
-  <!-- Update Book Controller -->
-  <servlet>
-    <servlet-name>UpdateBookController</servlet-name>
-    <servlet-class>com.vbc.servlet.management.controller.UpdateBookController</servlet-class>
-  </servlet>
-
-  <servlet-mapping>
-    <servlet-name>UpdateBookController</servlet-name>
-    <url-pattern>/UpdateBookController</url-pattern>
-  </servlet-mapping>
-
-  <servlet>
-    <servlet-name>UpdateBook</servlet-name>
-    <jsp-file>/views/update-book.jsp</jsp-file>
-  </servlet>
-
-  <servlet-mapping>
-    <servlet-name>UpdateBook</servlet-name>
-    <url-pattern>/views/update-book.jsp</url-pattern>
-  </servlet-mapping>
 
   <!-- Add User Controller -->
   <servlet>
