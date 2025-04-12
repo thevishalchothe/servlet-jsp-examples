@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Book Management System!</title>
+  <meta charset="UTF-8">
+  <title>Book Management System</title>
 </head>
 <body>
 
-<h1>Welcome to DashBoard of Librarian! -> Book Management System with Servlet</h1>
+<h1>Welcome to the Dashboard of Librarian! :- Book Management System with Servlet</h1>
 <hr>
 
 <h2>Perform Operations</h2>
 <p>
   <strong>Admin:</strong>
-  <a href="/book-management-servlet-app/RegisterAdminController">Register Admin</a> |
-  <a href="/book-management-servlet-app/LoginAdminController">Login Admin</a>
+  <span>
+    <a href="/book-management-servlet-app/views/register-admin.html">Register Admin</a> |
+    <a href="/book-management-servlet-app/AdminController?action=login">Login Admin</a>
+  </span>
   &nbsp; &nbsp;
 
-<strong>Book:</strong>
-<span>
+  <strong>Book:</strong>
+  <span>
     <a href="/book-management-servlet-app/views/add-book.html">Add Book</a> |
     <a href="/book-management-servlet-app/BookController?action=viewBooks">View Books</a>
   </span>
-&nbsp; &nbsp;
+  &nbsp; &nbsp;
 
   <strong>User:</strong>
   <span>

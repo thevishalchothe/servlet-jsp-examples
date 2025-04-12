@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Register Admin!</title>
+    <title>Register Admin</title>
 </head>
 <body>
-<h2>Welcome Admin! (Librarian) Book Management System!</h2>
-<h2>Register as Admin (Librarian)</h2>
+<h2>Welcome Admin! (Librarian) - Book Management System</h2>
+<h3>Register as Admin (Librarian)</h3>
 
-<form action="/book-management-servlet-app/RegisterAdminController" method="post">
-    <label>Admin Name:</label>
-    <input type="text" name="adminName" required><br><br>
+<form action="/book-management-servlet-app/AdminController?action=register" method="POST">
+    <label for="adminName">Admin Name:</label>
+    <input type="text" name="adminName" id="adminName" required><br><br>
 
-    <label>Username:</label>
-    <input type="text" name="username" required><br><br>
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" required><br><br>
 
-    <label>Password:</label>
-    <input type="password" name="password" required><br><br>
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" required><br><br>
 
     <input type="submit" value="Register">
 </form>

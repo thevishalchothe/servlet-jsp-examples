@@ -5,28 +5,16 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
 
-  <!-- Register Admin Controller -->
+  <!-- Admin Controller -->
   <servlet>
-    <servlet-name>RegisterAdminController</servlet-name>
-    <servlet-class>com.vbc.servlet.management.controller.RegisterAdminController</servlet-class>
+    <servlet-name>AdminController</servlet-name>
+    <servlet-class>com.vbc.servlet.management.controller.AdminController</servlet-class>
   </servlet>
 
   <servlet-mapping>
-    <servlet-name>RegisterAdminController</servlet-name>
-    <url-pattern>/RegisterAdminController</url-pattern>
+    <servlet-name>AdminController</servlet-name>
+    <url-pattern>/AdminController</url-pattern>
   </servlet-mapping>
-
-  <!-- Login Admin Controller -->
-  <servlet>
-    <servlet-name>LoginAdminController</servlet-name>
-    <servlet-class>com.vbc.servlet.management.controller.LoginAdminController</servlet-class>
-  </servlet>
-
-  <servlet-mapping>
-    <servlet-name>LoginAdminController</servlet-name>
-    <url-pattern>/LoginAdminController</url-pattern>
-  </servlet-mapping>
-
 
   <!-- Book Controller -->
   <servlet>

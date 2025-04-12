@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Admin Homepage!</title>
+    <title>Admin Homepage</title>
 </head>
 <body>
 
-<h1>Welcome to Admin (Librarian) Homepage!</h1>
+<h1>Welcome to Admin (Librarian) Homepage</h1>
 <hr>
 
 <h2>Operations</h2>
 <p>
     <strong>Book:</strong>
-    <a href="/book-management-servlet-app/views/add-book.html">Add Book</a> |
-    <a href="/book-management-servlet-app/ViewBookController">View Books</a>
+    <button onclick="location.href='/book-management-servlet-app/views/add-book.html'">Add Book</button>
+    <button onclick="location.href='/book-management-servlet-app/BookController?action=viewBooks'">View Books</button>
     &nbsp; &nbsp;
+
     <strong>User:</strong>
-    <a href="/book-management-servlet-app/views/add-user.html">Add User</a> |
-    <a href="/book-management-servlet-app/ViewUserController">View Users</a>
+    <button onclick="location.href='/book-management-servlet-app/views/add-user.html'">Add User</button>
+    <button onclick="location.href='/book-management-servlet-app/UserController?action=viewUsers'">View Users</button>
     <br><br>
 </p>
 

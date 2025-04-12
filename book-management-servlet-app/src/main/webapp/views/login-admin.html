@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Admin Login here!</title>
+    <title>Admin Login</title>
 </head>
 <body>
-<h1>Login as Admin! (Librarian)</h1>
+<h1>Login as Admin (Librarian)</h1>
 
-<form action="/book-management-servlet-app/LoginAdminController" method="post">
+<form action="/book-management-servlet-app/AdminController?action=login" method="POST">
     <label for="username">Username:</label>
     <input type="text" id="username" name="username" required><br><br>
 
@@ -24,14 +24,14 @@
 
 <script>
     const urlParams = new URLSearchParams(window.location.search);
- if (urlParams.get('success') === 'true') {
-     alert("Registration successful! Please login now.");
-     history.replaceState(null, "", window.location.pathname);
- }
- if (urlParams.get('error') === 'true') {
-     alert("Invalid username or password. Please try again.");
-     history.replaceState(null, "", window.location.pathname);
- }
+    if (urlParams.get('success') === 'true') {
+        alert("Registration successful! Please login now.");
+        history.replaceState(null, "", window.location.pathname);
+    }
+    if (urlParams.get('error') === 'true') {
+        alert("Invalid username or password. Please try again.");
+        history.replaceState(null, "", window.location.pathname);
+    }
 </script>
 </body>
 </html>
