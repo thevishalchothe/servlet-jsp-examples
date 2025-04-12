@@ -12,7 +12,7 @@
 User user = (User) request.getAttribute("user");
 if (user != null) {
 %>
-<form action="<%= request.getContextPath() %>/UpdateUserController" method="post">
+<form action="<%= request.getContextPath() %>/UserController?action=updateUser" method="post">
   <input type="hidden" name="uid" value="<%= user.getUid() %>">
 
   <label for="uname">Name:</label>
@@ -32,6 +32,6 @@ if (user != null) {
 %>
 
 <br>
-<button onclick="location.href='ViewUserController'">Back to User List</button>
+<button onclick="location.href='<%= request.getContextPath() %>/UserController?action=viewUsers'">Back to User List</button>
 </body>
 </html>

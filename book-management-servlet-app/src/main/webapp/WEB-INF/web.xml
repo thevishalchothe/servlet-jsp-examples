@@ -39,59 +39,15 @@
     <url-pattern>/BookController</url-pattern>
   </servlet-mapping>
 
-
-  <!-- Add User Controller -->
+  <!-- User Controller -->
   <servlet>
-    <servlet-name>AddUserController</servlet-name>
-    <servlet-class>com.vbc.servlet.management.controller.AddUserController</servlet-class>
+    <servlet-name>UserController</servlet-name>
+    <servlet-class>com.vbc.servlet.management.controller.UserController</servlet-class>
   </servlet>
 
   <servlet-mapping>
-    <servlet-name>AddUserController</servlet-name>
-    <url-pattern>/AddUserController</url-pattern>
-  </servlet-mapping>
-
-  <!-- View User Controller -->
-  <servlet>
-    <servlet-name>ViewUserController</servlet-name>
-    <servlet-class>com.vbc.servlet.management.controller.ViewUserController</servlet-class>
-  </servlet>
-
-  <servlet-mapping>
-    <servlet-name>ViewUserController</servlet-name>
-    <url-pattern>/ViewUserController</url-pattern>
-  </servlet-mapping>
-
-  <!-- Delete User Controller -->
-  <servlet>
-    <servlet-name>DeleteUserController</servlet-name>
-    <servlet-class>com.vbc.servlet.management.controller.DeleteUserController</servlet-class>
-  </servlet>
-
-  <servlet-mapping>
-    <servlet-name>DeleteUserController</servlet-name>
-    <url-pattern>/DeleteUserController</url-pattern>
-  </servlet-mapping>
-
-  <!-- Update User Controller -->
-  <servlet>
-    <servlet-name>UpdateUserController</servlet-name>
-    <servlet-class>com.vbc.servlet.management.controller.UpdateUserController</servlet-class>
-  </servlet>
-
-  <servlet-mapping>
-    <servlet-name>UpdateUserController</servlet-name>
-    <url-pattern>/UpdateUserController</url-pattern>
-  </servlet-mapping>
-
-  <servlet>
-    <servlet-name>UpdateUser</servlet-name>
-    <jsp-file>/views/update-user.jsp</jsp-file>
-  </servlet>
-
-  <servlet-mapping>
-    <servlet-name>UpdateUser</servlet-name>
-    <url-pattern>/views/update-user.jsp</url-pattern>
+    <servlet-name>UserController</servlet-name>
+    <url-pattern>/UserController</url-pattern>
   </servlet-mapping>
 
 </web-app>
