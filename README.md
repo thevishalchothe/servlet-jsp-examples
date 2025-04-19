@@ -1,6 +1,6 @@
-# servlets-tutorial-examples 🚀
+# servlet-jsp-examples 🚀
 
-The `servlets-tutorial-examples` showcases a variety of hands-on projects focused on demonstrating the core concepts and operations using Java Servlets. 📘🚀
+The `servlet-jsp-examples` showcases a variety of hands-on projects focused on demonstrating the core concepts and operations using Java Servlets. 📘🚀
 
 ## Project Architecture 📂
 
@@ -62,15 +62,16 @@ Before you begin, make sure the following are installed:
 ### **Clone the Repository**
 
    ```bash
-   git clone https://github.com/thevishalchothe/servlets-tutorial-examples.git
-   cd servlets-tutorial-examples
+   git clone https://github.com/thevishalchothe/servlet-jsp-examples.git
+
+   cd servlet-jsp-examples
    ```
 
 ---
 
 ## **Contributing** 💡
 
-We welcome contributions to the **servlets-tutorial-examples**! Here's how you can contribute:
+We welcome contributions to the **servlet-jsp-examples**! Here's how you can contribute:
 
 1. Fork the repository and create a new branch for your feature or bug fix.
 2. Implement your changes and commit them with clear messages.
